@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
-import 'outlineButton.dart';
+import 'custom_button.dart';
 
 class MenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      clipBehavior: Clip.antiAlias,
+      margin: EdgeInsets.only(top: 20.0),
       height: 245.0,
       decoration: BoxDecoration(
         color: kSecondaryColor,
@@ -27,7 +29,7 @@ class MenuCard extends StatelessWidget {
           ClipPath(
             clipper: ClippingClass(),
             child: Container(
-              width: 372.0,
+              width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -43,8 +45,11 @@ class MenuCard extends StatelessWidget {
                     Text("Our menu", style: Theme.of(context).textTheme.headline1),
                     Text("Check out the delivery menu", style: Theme.of(context).textTheme.bodyText1),
                     SizedBox(height: 15.0),
-                    OutlineBtn(
-                      buttonTitle: "Check",
+                    CustomBtn(
+                      width: 100.0,
+                      btnBg: Colors.white,
+                      btnTextStyle: Theme.of(context).textTheme.bodyText1.copyWith(color: kOrangeLight),
+                      buttonTitle: "Show",
                       onTap: () => {
                         // Do something
                       },
