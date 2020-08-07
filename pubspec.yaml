@@ -26,7 +26,7 @@ flutter:
     - assets/icons/
 
   fonts:
-   - family: Baloo Bhai 2
+   - family: Baloo Bhai 2 Bold
      fonts:
        - asset: fonts/BalooBhai2-Bold.ttf
          weight: 700
