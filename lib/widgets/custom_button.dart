@@ -33,6 +33,7 @@ class CustomBtn extends StatelessWidget {
           child: Text(buttonTitle, style: btnTextStyle),
         ),
       ),
+      onTap: onTap,
     );
   }
 }

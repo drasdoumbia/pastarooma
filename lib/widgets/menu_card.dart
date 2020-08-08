@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
+import '../screens/menu_screen.dart';
 import 'custom_button.dart';
 
 class MenuCard extends StatelessWidget {
@@ -51,7 +52,10 @@ class MenuCard extends StatelessWidget {
                       btnTextStyle: Theme.of(context).textTheme.bodyText1.copyWith(color: kOrangeLight),
                       buttonTitle: "Show",
                       onTap: () => {
-                        // Do something
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MenuScreen()),
+                        ),
                       },
                     ),
                   ],
