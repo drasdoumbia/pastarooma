@@ -6,3 +6,5 @@ const kSecondaryColor = Color(0xFFFF4D26);
 const kOrangeLight = Color(0xFFFFA726);
 const kGreyDark = Color(0xFF363E36);
 const kGreyLight = Color(0xFFA5A5A5);
+
+const kDefaultPadding = 20.0;
