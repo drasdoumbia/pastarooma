@@ -4,6 +4,8 @@ import '../constants.dart';
 import 'menu_list.dart';
 
 class MenuScreen extends StatelessWidget {
+  static const id = 'menu_screen';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

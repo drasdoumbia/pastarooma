@@ -52,10 +52,7 @@ class MenuCard extends StatelessWidget {
                       btnTextStyle: Theme.of(context).textTheme.bodyText1.copyWith(color: kOrangeLight),
                       buttonTitle: "Show",
                       onTap: () => {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MenuScreen()),
-                        ),
+                        Navigator.pushNamed(context, MenuScreen.id),
                       },
                     ),
                   ],

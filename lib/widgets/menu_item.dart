@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pastarooma/constants.dart';
+import 'package:pastarooma/screens/orderSuccess.dart';
 
 import 'custom_button.dart';
 
@@ -87,7 +88,12 @@ class MenuItem extends StatelessWidget {
                       btnBg: Colors.white,
                       buttonTitle: "Order",
                       onTap: () => {
-                        // Do something
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => OrderSuccess(),
+                          ),
+                        )
                       },
                     ),
                     IconButton(
