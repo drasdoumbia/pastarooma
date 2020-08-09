@@ -15,6 +15,7 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return Container(
       padding: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
@@ -84,7 +85,7 @@ class MenuItem extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     CustomBtn(
-                      width: 126.0,
+                      width: screenWidth <= 375.0 ? 90.0 : 126.0,
                       btnBg: Colors.white,
                       buttonTitle: "Order",
                       onTap: () => {
