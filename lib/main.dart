@@ -4,9 +4,9 @@ import 'package:provider/provider.dart';
 import 'app.dart';
 import 'constants.dart';
 import 'models/menu_data.dart';
-import 'screens/home.dart';
 import 'screens/menu_screen.dart';
 import 'screens/orderSuccess.dart';
+import 'tabbar.dart';
 
 void main() {
   runApp(Pastarooma());
@@ -19,9 +19,9 @@ class Pastarooma extends StatelessWidget {
       create: (context) => MenuData(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: Home.id,
+        initialRoute: MainTabBar.id,
         routes: {
-          Home.id: (context) => Home(),
+          MainTabBar.id: (context) => MainTabBar(),
           MenuScreen.id: (context) => MenuScreen(),
           OrderSuccess.id: (context) => OrderSuccess(),
         },
