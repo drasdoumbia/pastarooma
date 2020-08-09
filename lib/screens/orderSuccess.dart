@@ -54,12 +54,12 @@ class OrderSuccess extends StatelessWidget {
           )
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            SizedBox(height: 70.0),
+            SizedBox(height: 50.0),
             Center(
               child: Text(
                 "Your order is ready",
@@ -68,6 +68,7 @@ class OrderSuccess extends StatelessWidget {
             ),
             SizedBox(height: 50.0),
             Container(
+              margin: EdgeInsets.only(bottom: 40.0),
               padding: EdgeInsets.symmetric(vertical: 40.0),
               decoration: BoxDecoration(
                 color: Colors.white,
