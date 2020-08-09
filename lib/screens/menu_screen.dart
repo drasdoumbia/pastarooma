@@ -56,7 +56,7 @@ class MenuScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
+      body: Stack(
         children: <Widget>[
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
