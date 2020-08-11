@@ -14,4 +14,10 @@ This project is a UI integration with Flutter.
 Amazing design work!
 [Atilog - Free Mobile APP UI kit](https://www.behance.net/gallery/93705559/Atilog-Free-Mobile-APP-UI-kit).
 
-![Pastarooma](pastarooma.jpg)
+From this 
+
+![Pastarooma](screenshot/pastarooma.jpg)
+
+To this 
+
+![Pastarooma](screenshot/home.png) ![Pastarooma](screenshot/menu.png) ![Pastarooma](screenshot/order_success.png) ![Pastarooma](screenshot/settings.png) ![Pastarooma](screenshot/favorite.png)
