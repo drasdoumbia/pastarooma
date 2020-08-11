@@ -21,6 +21,16 @@ class MenuData extends ChangeNotifier {
         description: "A mix of shrimp, clams, mussels and scallops",
         points: 30,
         image: "assets/images/card_img_1.png"),
+    Menu(
+        title: "Spaghetti Santalusia",
+        description: "spaghetti dish, beef, cheese, closeup, very delicious",
+        points: 50,
+        image: "assets/images/card_img_4.png"),
+    Menu(
+        title: "Pasta Douba",
+        description: "spaghetti, white, plate, basil, dinner, food, italian, pasta, italian food",
+        points: 47,
+        image: "assets/images/card_img_5.png"),
   ];
 
   UnmodifiableListView<Menu> get menus {
