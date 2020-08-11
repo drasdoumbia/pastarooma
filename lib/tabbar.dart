@@ -97,7 +97,6 @@ class _MainTabBarState extends State<MainTabBar> {
           ),
           Container(
             width: double.infinity,
-            height: 80.0,
             child: BottomNavigationBar(
               elevation: 0,
               backgroundColor: Colors.transparent,

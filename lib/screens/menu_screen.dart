@@ -56,7 +56,7 @@ class MenuScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Stack(
+      body: Column(
         children: <Widget>[
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -73,7 +73,9 @@ class MenuScreen extends StatelessWidget {
               ],
             ),
           ),
-          MenuList()
+          Expanded(
+            child: MenuList(),
+          )
         ],
       ),
     );
